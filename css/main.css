@@ -1,0 +1,48 @@
+
+* { margin: 0; box-sizing: border-box; } 
+
+body { 
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: serif, sans-serif;
+    color: black;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: antiquewhite;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 900px;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: darkgreen;
+    color: whitesmoke;
+}
+
+header img {
+    width: 160px;
+    height: auto;
+    float: right;
+}
+
+label {display: block;
+}
+label span {display: block;
+padding-top: 0.8rem;
+padding-bottom: 0.2rem;}
+
+footer {
+    font-size: smaller;
+}
