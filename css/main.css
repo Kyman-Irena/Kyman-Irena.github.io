@@ -46,16 +46,17 @@ padding-bottom: 0.2rem;}
 footer {
     font-size: smaller;
 }
-.submission {
-    
-    border: 1px solid wheat;
-    padding: 0.8em 2em;
-    margin: 0.5em;
-    color: wheat;
-    background-color: darkgreen;
+img {
+    display: block;
+    padding: 5px;
 }
-.img {
+
+#img {
     display: flex;
     flex-direction: column;
-    align-content:space-around;
+    align-content:space-between;
+}
+.frame {
+    padding: 10px;
+    background-color: bisque;
 }
