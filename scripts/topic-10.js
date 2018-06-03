@@ -27,13 +27,13 @@ window.open(canvas5.toDataURL("image/png"));
 }
 
 
-
+function convButton() {
 var canvas = document.getElementById("canvas1");
 var context = canvas.getContext("2d");
 var image = document.getElementById("img");
 
 context.drawImage(image, 0, 0);
-image.crossOrigin = "anonymous";
+
 var imageData = context.getImageData(0, 0, 200, 200);
 var px = imageData.data;
 var length = px.length;
@@ -47,3 +47,4 @@ px[i + 1] = grayscale;
 px[i + 2] = grayscale;
 }
     context.putImageData(imageData, 0, 0);
+}
