@@ -60,3 +60,6 @@ img {
     padding: 10px;
     background-color: bisque;
 }
+.myCanvas {
+    border: solid 2px black;
+}
