@@ -18,8 +18,6 @@ context.fillRect(10, 10, 100, 100);
 context.strokeRect(10, 10, 100, 100);
 
 
-var button = document.getElementById("saveButton");
-button.addEventListener("click", saveDrawing, false);
 
 function saveDrawing() {
 var canvas5 = document.getElementById("demo2");
