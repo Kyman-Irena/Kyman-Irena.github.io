@@ -1,4 +1,7 @@
-
+// Store
+localStorage.setItem("lastname", "Kyman");
+// Retrieve
+document.getElementById("result").innerHTML = localStorage.getItem("lastname");
 
 function saveData() {
 var name = document.getElementById("firstName").value;
@@ -8,8 +11,8 @@ localStorage.setItem("email", email);
 }
 
 function getData(){
-    document. getElementById("getName").innerHTML = localStorage.getItem ("name");
-    document. getElementById("getEmail").innerHTML = localStorage.getItem ("email");
+    document. getElementById("getData").innerHTML = localStorage.getItem ("name");
+     document. getElementById("getData").innerHTML = localStorage.getItem ("email");
 }
 
 var users = new Array();
@@ -17,7 +20,7 @@ users.push('Irena', 'Michael', 'Thomas');
 localStorage.setItem("users", JSON.stringify(users));
 var retrievedData = localStorage.getItem("users");
 var users2 = JSON.parse(retrievedData);
-//alert(users2.length);
+alert(users2.length);
 document.getElementById("array").innerHTML = users2[1];
 
 var me = {'fullName': 'Irena', 'Address': 'Ukraine', 'gender': 34};
