@@ -18,14 +18,6 @@ context.fillRect(10, 10, 100, 100);
 context.strokeRect(10, 10, 100, 100);
 
 
-
-function saveDrawing() {
-var canvas5 = document.getElementById("demo2");
-window.open(canvas5.toDataURL("image/png"));
-}
-
-
-
 var canvas = document.getElementById("canvas1");
 var context = canvas.getContext("2d");
 var image = document.getElementById("img");
@@ -45,3 +37,5 @@ px[i + 1] = grayscale;
 px[i + 2] = grayscale;
 }
     context.putImageData(imageData, 0, 0);
+
+

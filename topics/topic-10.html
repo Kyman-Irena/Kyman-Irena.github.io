@@ -1,4 +1,5 @@
 <!doctype html>
+<!doctype html>
 <html lang="en-US">
     <head>
       <meta charset="utf-8">
@@ -15,14 +16,41 @@
         <nav>
         </nav>
         <main>
-            <video width="320" controls>
+            
+            <video id="video" width="320" controls>
   <source src="../video/CIT261.mp4" type="video/mp4">
    Your browser does not support the video tag.
 </video>
+            <p>A picture converted to black and white</p>
+            <img src="../img/main-logo.jpg" id="img">
+            <canvas id="canvas1" class= "myCanvas" width="200" height="200"></canvas>
+            <div>
+                <audio controls>
+                    <source src="../audio/bah.mp3" type="audio/mpeg">
+                    Sorry! Your browser doesn't support Audio.
+                </audio>
+            </div>
+            <div>
+            <canvas id="myCanvas" class="myCanvas" width="320" height="320" >
+            Sorry! Your browser doesn't support Canvas.
+            </canvas>
+                </div>
+            <div>
+            <canvas width="200" height="200" id="demo2" class="myCanvas">
+Sorry! Your browser doesn't support Canvas.
+</canvas>
+            </div>
+                
+            <canvas width="400" height="400" id="drawing" class="myCanvas">
+Sorry! Your browser doesn't support Canvas.
+</canvas>
+
    
         </main>
         <footer>
             <p>&copy;2018 &star;Irena Kyman | Ukraine &star; <a href="http://www.byui.edu/online" target="_blank"> BYU-Idaho Online Learning</a></p>
             </footer>
+        <script src="../scripts/topic-10.js"></script>
+        <script src="../scripts/drawing.js"></script>
             </body>
 </html>
