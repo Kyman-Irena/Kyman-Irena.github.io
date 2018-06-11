@@ -12,7 +12,13 @@ function getData(){
     document. getElementById("getEmail").innerHTML = localStorage.getItem ("email");
 }
 
-
+var users = new Array();
+users.push('Irena', 'Michael', 'Thomas');
+localStorage.setItem("users", JSON.stringify(users));
+var retrievedData = localStorage.getItem("users");
+var users2 = JSON.parse(retrievedData);
+//alert(users2.length);
+document.getElementById("array").innerHTML = users2;
 
 
 function addItem() {
