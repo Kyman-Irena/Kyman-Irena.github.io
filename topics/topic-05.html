@@ -28,8 +28,15 @@
             </div>
             
             <div>
-                <p>Array's Data:</p>
+                <p>Here is an array:</p>
                 <p id="array"></p>
+                <label><span>You can add a new item to the array here:</span><input type="text" id="newItem"></label>
+                <input type="button" value="Add" onclick=addItem()>
+                <p>To choose an array's item, please indicate its number below, starting from 0:</p>
+                <label><input type="text" id="number"></label>
+                <input type="button" value="Get an item" onclick=getArrayItem()>
+                <p id="arrayItem"></p>
+                
             </div>
             
             <div >

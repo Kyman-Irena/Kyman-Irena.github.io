@@ -12,13 +12,33 @@ function getData(){
     document. getElementById("getEmail").innerHTML = localStorage.getItem ("email");
 }
 
+
+
+
+function addItem() {
 var users = new Array();
 users.push('Irena', 'Michael', 'Thomas');
+var newItem = document.getElementById("newItem").value;
+users.push(newItem);
 localStorage.setItem("users", JSON.stringify(users));
 var retrievedData = localStorage.getItem("users");
 var users2 = JSON.parse(retrievedData);
 //alert(users2.length);
-document.getElementById("array").innerHTML = users2[1];
+document.getElementById("array").innerHTML = users2;
+}
+ function getArrayItem() {
+ var users = new Array();
+users.push('Irena', 'Michael', 'Thomas');
+ var newItem = document.getElementById("newItem").value;
+users.push(newItem);
+localStorage.setItem("users", JSON.stringify(users));
+var retrievedData = localStorage.getItem("users");
+var users2 = JSON.parse(retrievedData);
+var number = parseInt(document.getElementById("number").value);
+document.getElementById("arrayItem").innerHTML = users2[number-1];   
+ }
+
+
 
 var me = {'fullName': 'Irena', 'Address': 'Ukraine', 'gender': 34};
 localStorage.setItem("user", JSON.stringify(me));
