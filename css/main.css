@@ -68,4 +68,6 @@ label {display: block;
 label span {display: block;
 padding-top: 0.8rem;
 padding-bottom: 0.2rem;}
-
+#notes {
+    font-size: smaller;
+}
