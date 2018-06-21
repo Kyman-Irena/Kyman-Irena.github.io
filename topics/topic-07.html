@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+      <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CIT 261 Assignment Portal | Irena Kyman | BYU-Idaho</title>
+        <meta name="description" content="Topic 7. Manipulating CSS Class Properties Using JavaScript ">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/main.css">   
+    </head>
+    <body>
+        <header>
+             <h1>7. Manipulating CSS Class Properties Using JavaScript</h1>
+        </header>
+        <nav>
+        </nav>
+        <main>
+            <p>Here is the most simple example on how we change the CSS Class property (background color in our case) of the element using JavaScript</p>
+            <p>You can change the color as many times as you want by clicking the button below</p>
+           
+          <div id="color">
+        </div>
+        <div>
+
+        <input type ="button" value ="Change Color" onclick=changeColor() class='button'>
+        <input type ="button" value ="Reset Color" onclick=resetColor() class='button'>
+            </div>
+        <p>Also you can change its width and height:</p>
+        <label><span>Width:</span><input type="text" id="width" placeholder="500px" ></label>
+        <label><span>Height:</span><input type="text" id="height" placeholder="500px" ></label>
+        <input type="button" value="Change Width and Height" onclick=changeDimentions()>
+        <p>Or add some shadow to the bar:</p>
+        <label><span>Shadow:</span><input type="text" id="shadow" placeholder="10px, 10px, grey" ></label>
+        <input type="button" value="Add Shadow" onclick=addShadow()>
+        <p>Another way to alter the style of an element is by changing its class attribute.</p>
+        <input type="button" value="Transform to circle" onclick=changeToCircle()>
+        <input type="button" value="Hide/Show the element" onclick=hide()>
+        <input type="button" value="Remove/Add the element" onclick=remove()>
+        
+        
+   
+        </main>
+        <footer>
+            <p>&copy;2018 &star;Irena Kyman | Ukraine &star; <a href="http://www.byui.edu/online" target="_blank"> BYU-Idaho Online Learning</a></p>
+            </footer>
+        <script src="../scripts/topic-7.js"></script>
+        
+            </body>
+</html>
