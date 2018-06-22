@@ -1,0 +1,184 @@
+
+* { margin: 0; box-sizing: border-box; } 
+
+body { 
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: serif, sans-serif;
+    color: black;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: antiquewhite;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 900px;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: darkgreen;
+    color: whitesmoke;
+}
+
+footer {
+    font-size: smaller;
+}
+.duration {
+    margin: 20px;
+    }
+.container {
+    display: inline-block;
+    margin: 30px;
+}
+.circle {
+    margin: 20px auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    }
+.circle:hover {
+    cursor: pointer;
+    transform: scale(2);
+}
+.circle1 {
+    background-color: darkgreen;
+    transition: all 0.5s;
+}
+.circle2 {
+    background-color: bisque;
+    transition: all  1.5s;
+}
+.circle3 {
+    background-color: blueviolet;
+    transition: all 3s;
+}
+.timing {
+  margin: 20px;
+}
+.wrap {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    
+}
+
+.box {
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+}
+
+.box0 {
+    background-color:teal;
+}
+.box0:hover {
+    width: 200px;
+    transition: width 1.5s linear;  
+}
+.box1 {
+     background-color:coral;
+    }
+.box1:hover {
+    width: 200px;
+    transition: width 1.5s ease;
+}
+.box2 {
+    background-color:maroon;
+}
+.box2:hover {
+    width: 200px;
+    transition: width 1.5s ease-in;
+}
+.box3 {
+    background-color:navy;
+}
+.box3:hover {
+    width: 200px;
+    transition: width 1.5s ease-out;
+}
+.box4 {
+    background-color:crimson;
+}
+.box4:hover {
+    width: 200px;
+    transition: width 1.5s ease-in-out;
+}
+#example1 ul {
+    overflow: hidden;
+    background-color: darkgreen;
+    list-style-type: none;
+}
+#example1 ul a {
+   float: left;
+    color: antiquewhite;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    transition: all 1.5s;
+    
+}
+#example1 ul:hover {    
+    background-color: gainsboro;
+    transition: background-color 2s ease-in-out;
+    
+}
+
+#example1 ul a:hover{
+font-size: 30px;
+color: black; 
+transition: color 2s ease;
+}
+
+h3 {
+    display: none;
+    text-align: center;
+}
+.menu {
+    width: 50px;
+    height: 50px;
+    background-color: darkgreen;
+    border: 1px solid gainsboro;
+    transition: all 1s;
+}
+.menu:hover {
+    width: 150px;
+    height: 80px;
+}
+.menu a {
+    
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 20px;
+}
+#home:hover>h3 {
+    display: block;
+    padding-top: 20px;
+    
+    
+}
+#aboutUs:hover>h3 {
+    display: block;
+    padding-top: 20px;
+}
+#articles:hover>h3 {
+    display: block;
+    padding-top: 20px;
+}
+#contacts:hover>h3 {
+    display: block;
+    padding-top: 20px;
+}
+
+
+
