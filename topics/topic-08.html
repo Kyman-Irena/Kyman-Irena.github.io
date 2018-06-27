@@ -16,9 +16,43 @@
         </nav>
         <main>
             
-        <div class="box"></div>
-        <input type ="button" value ="Play" onclick=moveCircle() class='toggleButton'>
-        
+        <h2>It's possible to use JavaScript events to trigger CSS Transitions and Animations.</h2>
+        <h3>Example 1: Onclick event</h3>
+            <div id="container">
+            <div id="fade"></div>
+            <input type="button" value="Fade/Enhance" onclick=fadeOut() id="buttonFade">
+            </div>
+        <h3>Example 2: OnMouseOver/OnMouseOut events</h3>
+            <div id="container">
+            <img   onmouseover="stop(this)" onmouseout="resume(this)" src="../img/main-logo.jpg" alt="logo" class="logo" id="logo1">
+            </div>
+        <h3>Example 3: addEventListener</h3>
+        <p>addEventListener is a universal method, because it allows to  attache an event handler to the specified element. It doesn't overwrite existing event handlers. You can add as many event handlers to one element as you want. When using the addEventListener() method, the JavaScript is separated from the HTML markup, for better readability and allows you to add event listeners even when you do not control the HTML markup.</p>
+            <p>Here is an example from example 2. But we will add onClick event using addEventListener method.</p>
+        <div id="container">
+            <img   onmouseover="stop(this)" onmouseout="resume(this)" src="../img/main-logo.jpg" alt="logo" class="logo" id="logo2">
+            </div>
+            <h3>Here is an example from topic 11 (CSS Transition), but we will use addEventListener to add additional functionality.</h3>
+            <p>Please click on the menu item once it's appear.</p>
+            <div id="example2">
+    <div class="menu" id="home">
+                <h2></h2>
+                <h4><a href="#home" id="text1">Home</a></h4>
+            </div>
+            <div class="menu" id="aboutUs">
+                <h2></h2>
+                <h4><a href="#home" id="text2">About Us</a></h4>
+            </div>
+            <div class="menu" id="articles">
+                <h2></h2>
+                <h4><a href="#home" id="text3">Articles</a></h4>
+            </div>
+            <div class="menu" id="contacts">
+                <h2></h2>
+                <h4><a href="#home" id="text4">Contacts</a></h4>
+            </div>
+            </div>            
+            
        
         
         

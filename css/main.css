@@ -98,7 +98,78 @@ padding-bottom: 0.2rem;}
     background-color: darkgreen;
     border-radius: 100%;
 }
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#fade {
+    
+    width:200px;
+    height: 200px;
+    background-color: darkgreen;
+    margin: 20px;
+    opacity: 100;
+    transition: all 1.5s;
+}
+#buttonFade {
+    display: block;
+    margin: 20px;
+}
+.logo {
+    margin: 30px;
+    animation:spinning 4s infinite linear;
+}
+@keyframes spinning {
+    from {transform: rotate(0);}
+    to {transform: rotate(360deg);}
+}
+.moving {
+   animation: moving 4s infinite linear;
+}
+@keyframes moving {
+    from {transform: translate(0,0) rotate(0);}
+    30% {transform: translate(300px, 0) rotate(360deg);}
+    60% {transform: translate(-300px, 0) rotate(0);}
+    to {transform: translate(0, 0) rotate(360deg);}
+}
+.menu {
+    width: 50px;
+    height: 50px;
+    background-color: darkgreen;
+    border: 1px solid gainsboro;
+    transition: all 1s;
+}
+.menu:hover {
+    width: 150px;
+    height: 80px;
+}
+.menu a {
+    
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 20px;
+}
+#home:hover>h4 {
+    display: block;
+    padding-top: 20px;
+    
+    
+}
+#aboutUs:hover>h4 {
+    display: block;
+    padding-top: 20px;
+}
+#articles:hover>h4 {
+    display: block;
+    padding-top: 20px;
+}
+#contacts:hover>h4 {
+    display: block;
+    padding-top: 20px;
+}
 
-.horizTranslate {
-  transition: 3s;
-  margin-left: 50% !important;
+h4 {
+    display: none;
+    text-align: center;
+}
