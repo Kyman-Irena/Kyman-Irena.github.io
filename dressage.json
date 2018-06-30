@@ -1,0 +1,82 @@
+[
+  {
+    "firstName": "Isabell",
+    "lastName" : "WERTH",
+    "rank": "1",
+    "horse": "WEIHEGOLD OLD",
+    "nationality": "GER",
+    "points": "2945"
+  },
+  {
+    "firstName": "Laura",
+    "lastName" : "GRAVES",
+    "rank": "2",
+    "horse": "VERDADES",
+    "nationality": "USA",
+    "points": "2631"
+  },
+  {
+    "firstName": "Isabell",
+    "lastName" : "WERTH",
+    "rank": "3",
+    "horse": "EMILIO 107",
+    "nationality": "GER",
+    "points": "2631"
+  },
+  {
+    "firstName": "Cathrine",
+    "lastName" : "DUFOUR",
+    "rank": "4",
+    "horse": "ATTERUPGAARDS CASSIDY",
+    "nationality": "DEN",
+    "points": "2605"
+  },
+  {
+    "firstName": "Sönke",
+    "lastName" : "ROTHENBERGER",
+    "rank": "5",
+    "horse": "COSMO 59",
+    "nationality": "GER",
+    "points": "2554"
+  },
+  {
+    "firstName": "Isabell",
+    "lastName" : "WERTH",
+    "rank": "6",
+    "horse": "DON JOHNSON FRH",
+    "nationality": "GER",
+    "points": "2373"
+  },
+  {
+    "firstName": "Dorothee",
+    "lastName" : "SCHNEIDER",
+    "rank": "7",
+    "horse": "SAMMY DAVIS JR.",
+    "nationality": "GER",
+    "points": "2372"
+  },
+  {
+    "firstName": "Patrik",
+    "lastName" : "KITTEL",
+    "rank": "8",
+    "horse": "DEJA",
+    "nationality": "SWE",
+    "points": "2299"
+  },
+  {
+    "firstName": "Helen",
+    "lastName" : "LANGEHANENBERG",
+    "rank": "9",
+    "horse": "DAMSEY FRH",
+    "nationality": "GER",
+    "points": "2297"
+  },
+  {
+    "firstName": "Jessica",
+    "lastName" : "VON BREDOW-WERNDL",
+    "rank": "10",
+    "horse": "UNEE BB",
+    "nationality": "GER",
+    "points": "2287"
+  }
+]

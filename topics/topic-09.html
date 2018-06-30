@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+      <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CIT 261 Assignment Portal | Irena Kyman | BYU-Idaho</title>
+        <meta name="description" content="Topic 9. Standard JavaScript Events Including those for Mobile Devices ( Ex. onTouchBegin, onLoad, etc.) and Animation and Transition Events ">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/main.css">   
+    </head>
+    <body>
+        <header>
+             <h1>9. Standard JavaScript Events Including those for Mobile Devices ( Ex. onTouchBegin, onLoad, etc.) and Animation and Transition Events</h1>
+        </header>
+        <nav>
+        </nav>
+        <main>
+          <p>There are a lot of events in JaveScript. For example, click, load, mouseover, drag, focus, touchstart. You can find a complete list here: https://www.w3schools.com/Jsref/dom_obj_event.asp</p> 
+          <p>We will consider some of them.</p>
+          <h3>Example 1. Drag and Drop</h3>
+            <div id='game'>
+            <div id='box1' class='drop' ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div id='box7' ondragstart="dragStart(event)" draggable="true"></div></div>
+            <div id='box2' class='drop' ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div id='box8' ondragstart="dragStart(event)"  draggable="true"></div></div>
+            <div id='box3' class='drop' ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div id='box9' ondragstart="dragStart(event)" draggable="true"></div></div>
+            <div id='box4' class='drop' ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id='box5' class='drop' ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id='box6' class='drop' ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            
+            <h3>Example 2. Animation and Transition Events</h3>
+            <p>Please mouse over the picture to stop its rotating.</p>
+           <div id="container">
+            <img   onmouseover="stop(this)" onmouseout="resume(this)" src="../img/main-logo.jpg" alt="logo" class="logo" id="logo2">
+            </div>
+        <h3>Example 3. Touchscreen events</h3>
+            <p>If you have touchscreen on you device, please try to touch and move across the square below and see the status and coordinates below it.</p>
+            <div id="container">
+                <div id='box'></div>
+                <h5 id="status">Status:</h5>
+                
+            </div>
+            <h3>Example 4. Scroll</h3>
+            
+        </main>
+        <footer>
+            <p>&copy;2018 &star;Irena Kyman | Ukraine &star; <a href="http://www.byui.edu/online" target="_blank"> BYU-Idaho Online Learning</a></p>
+            </footer>
+        <script src="../scripts/topic-9.js"></script>
+        
+            </body>
+</html>

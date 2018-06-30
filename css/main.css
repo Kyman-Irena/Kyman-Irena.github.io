@@ -18,7 +18,9 @@ h2 {
     text-align: center;
     border-bottom: 1px solid #bbb;
 }
-
+h5 {
+    font-size: 18px;
+}
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
@@ -172,4 +174,40 @@ padding-bottom: 0.2rem;}
 h4 {
     display: none;
     text-align: center;
+}
+#box {
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+        
+}
+#box7 {
+   width: 100px;
+    height: 100px;
+    background-color: darkgreen;
+        
+}
+#box8 {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+        
+}
+#box9 {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border: 1px solid black;
+        
+}
+.drop {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 1px solid black;
+}
+#game {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
