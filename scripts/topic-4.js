@@ -44,7 +44,7 @@ function display(pairs) {
     output += '</tr>';
     for (let i=0; i<pairs.length; i++) {
         output += '<tr>';
-        output += '<td>'+ pairs[i].lastName + ' '+ pairs[i].firstName'</td>';
+        output += '<td>'+ pairs[i].lastName + ' '+ pairs[i].firstName+'</td>';
         output += '<td>'+ pairs[i].horse+'</td>';
         output += '</tr>';
     }
