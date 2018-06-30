@@ -32,7 +32,7 @@ function display(pairs) {
     
   //  var string = '<ol>';
     //for (let i=0; i<pairs.length; i++){
-        string +='<li>' + pairs[i].lastName + ' '+ pairs[i].firstName+ ' '+pairs[i].horse +'</li>';
+        //string +='<li>' + pairs[i].lastName + ' '+ pairs[i].firstName+ ' '+pairs[i].horse +'</li>';
     //}
     
 //    string +="</ol>";
