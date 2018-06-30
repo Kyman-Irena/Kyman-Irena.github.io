@@ -30,13 +30,27 @@ function getRank() {
 
 function display(pairs) {
     
-    var string = '<ol>';
-    for (let i=0; i<pairs.length; i++){
+  //  var string = '<ol>';
+    //for (let i=0; i<pairs.length; i++){
         string +='<li>' + pairs[i].lastName + ' '+ pairs[i].firstName+ ' '+pairs[i].horse +'</li>';
-    }
+    //}
     
-    string +="</ol>";
-    document.getElementById('dressage').innerHTML = string;
+//    string +="</ol>";
+  //  document.getElementById('dressage').innerHTML = string;
+    var output='<table>';
+    output += '<tr>';
+    output += '<th>Rider</th>';
+    output += '<th>Horse</th>';
+    output += '</tr>';
+    for (let i=0; i<pairs.length; i++) {
+        output += '<tr>';
+        output += '<td>'+ pairs[i].lastName + ' '+ pairs[i].firstName'</td>';
+        output += '<td>'+ pairs[i].horse+'</td>';
+        output += '</tr>';
+    }
+    output += '</table>';
+    document.getElementById('dressage').innerHTML = output;
+    
 }
 
 
