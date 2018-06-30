@@ -211,3 +211,6 @@ h4 {
     flex-direction: row;
     justify-content: space-around;
 }
+body {
+    background-image: url('../img/werth.jpg');
+}

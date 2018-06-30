@@ -1,5 +1,5 @@
 window.addEventListener("load", getRank);
-
+var pairsObj;
 
 function getRank() {
     let request = new XMLHttpRequest();
@@ -14,8 +14,10 @@ function getRank() {
     //   } else 
         if (request.readyState == 4 && request.status == 200) {
             //alert("4.Responce has been sent and is ready to process");
-            let pair = JSON.parse(request.responseText);
-            console.log(pair);
+            let pairs = JSON.parse(request.responseText);
+            console.log(pairs);
+            pairsObj=pairs;
+            display(pairs);
             
         } //else {
         //     alert("Error: the request was not successful");
@@ -26,6 +28,16 @@ function getRank() {
     request.send();
 }
 
+function display(pairs) {
+    
+    var string = '<ol>';
+    for (let i=0; i<pairs.all.length; i++){
+        string +='<li>' + pairs.all[i].lastName + ' '+ pairs.all[i].firstName+ ' '+pairs.all[i].horse +'</li>';
+    }
+    
+    string +="</ol>";
+    document.getElementById('dressage').innerHTML = string;
+}
 
 
 
