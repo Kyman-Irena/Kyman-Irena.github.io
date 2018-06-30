@@ -63,12 +63,13 @@ main {
     height: 500px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 table {
   box-shadow: 10px 10px 15px #628ca6;
   border-collapse: collapse;
   }
 table, th, td {
-    border: 2px solid #d6d6d6;
+    border: 2px solid black;
     text-align: center;}
 
