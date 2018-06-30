@@ -31,8 +31,8 @@ function getRank() {
 function display(pairs) {
     
     var string = '<ol>';
-    for (let i=0; i<pairs.all.length; i++){
-        string +='<li>' + pairs.all[i].lastName + ' '+ pairs.all[i].firstName+ ' '+pairs.all[i].horse +'</li>';
+    for (let i=0; i<pairs.length; i++){
+        string +='<li>' + pairs[i].lastName + ' '+ pairs[i].firstName+ ' '+pairs[i].horse +'</li>';
     }
     
     string +="</ol>";
