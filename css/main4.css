@@ -72,5 +72,8 @@ table {
   }
 table, th, td {
     border: 2px solid darkgray;
-    text-align: center;}
+    text-align: center;
+    font-weight: 300;
+}
+
 
