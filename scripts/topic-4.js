@@ -39,6 +39,7 @@ function display(pairs) {
   //  document.getElementById('dressage').innerHTML = string;
     var output='<table>';
     output += '<tr>';
+    output += '<th>Rank</th>';
     output += '<th>Rider</th>';
     output += '<th>Horse</th>';
     output += '</tr>';
