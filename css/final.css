@@ -12,8 +12,8 @@ body {
 }
 #logo {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    
+    margin-right: 0;
     width: 90%;
 }
 #output {
@@ -55,18 +55,101 @@ a {
     font-weight: 700;
 }
 img {
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 20%;
 }
 #background {
-    background-color: gray;
-    opacity: .4;
+    box-shadow: 5px 5px 5px 5px gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: lightgrey;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+    transition: all 5s ease-in;
+}
+#background1 {
+    padding: 10px;
+    box-shadow: 5px 5px 5px 5px gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 1);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 5s ease-in;
+}
+ul{
+    list-style: none;
+}
+li {
+    margin: 10px;
+}
+footer {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #2d5986;
+    font-size: smaller;
+}
+nav ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: lightgray;
+    align-items: center;
+}
+nav ul li {
+    display: inline;
+    padding: 5px 5px 5px 5px;
+       /*text-align: center;*/
+}
+nav ul li a {
+    
+    width: 100%;
+    
+    /*text-align: center;*/
+}
+nav ul li.active a {
+    color: brown;
+    
+}
+nav ul li a:hover {
+    cursor: pointer;
+    color: cadetblue;
+    border-bottom: 3px solid #2d5986;
+    transition: all 0.5s ease-in;
 }
 
 
+
+
+#menu {
+  margin-top: 25px;
+  opacity: 0;
+  position: absolute;
+  height: 100vh;
+  width: 98vw;
+  background-color: rgba(245, 245, 245, 1);
+  box-shadow: 0 -3rem 3rem rgba(245, 245, 245, 1);
+  top: calc(-100vh - 3rem);
+  transition: top 1s;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  
+
+}
+
+#menu[open] {
+  top: 220px;
+  opacity: 1;
+}
 
