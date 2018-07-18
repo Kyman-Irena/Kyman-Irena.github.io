@@ -148,6 +148,7 @@ function getFlight() {
         '<li class = "info"> Launch Date(UTC): '+ flightObj[i].launch_date_utc + '</li>' +
         '<li class = "info"> Rocket Name: '+ flightObj[i].rocket.rocket_name + '</li>' +
         '<li class = "info"> Telemetry: '+ '<a href="'+ flightObj[i].telemetry.flight_club +'">'+ flightObj[i].telemetry.flight_club +'</a></li>' +
+        '<li class = "info"> Youtube link: '+'<a href="'+ flightObj[i].links.video_link +'">'+ flightObj[i].links.video_link + '</a></li>' +
         '<li class="info"> Details: ' + flightObj[i].details + '</li>'+
         '</div>';
 
@@ -166,6 +167,8 @@ function getLastFlight() {
         '<li class="info"> Launch Year: ' + flightObj.launch_year + '</li>' +
         '<li class = "info"> Launch Date(UTC): '+ flightObj.launch_date_utc + '</li>' +
         '<li class = "info"> Rocket Name: '+ flightObj.rocket.rocket_name + '</li>' +
+        '<li class = "info"> Telemetry: '+ '<a href="'+ flightObj.telemetry.flight_club +'">'+ flightObj.telemetry.flight_club +'</a></li>' +
+        '<li class = "info"> Youtube link: '+'<a href="'+ flightObj.links.video_link +'">' +flightObj.links.video_link + '</a></li>' +
         '<li class="info"> Details: ' + flightObj.details + '</li>'+
         '</div>';
 
