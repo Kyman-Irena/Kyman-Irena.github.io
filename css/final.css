@@ -150,23 +150,5 @@ nav ul li a:hover {
 #bold {
     font-weight: 700;
     }
-#menu1 {
-  margin-top: 25px;
-  opacity: 0;
-  position: absolute;
-  height: 100vh;
-  width: 98vw;
-  background-color: rgba(245, 245, 245, 1);
-  box-shadow: 0 -3rem 3rem rgba(245, 245, 245, 1);
-  top: calc(-100vh - 3rem);
-  transition: top 1s;
-  
-  
 
-}
-
-#menu1[open] {
-  top: 220px;
-  opacity: 1;
-}
 

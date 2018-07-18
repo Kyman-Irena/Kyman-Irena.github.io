@@ -45,12 +45,9 @@ function getInfo() {
 
     request.onreadystatechange = function() {
             if (request.readyState == 4 && request.status == 200) {
-            //alert("4.Responce has been sent and is ready to process");
             let info = JSON.parse(request.responseText);
             console.log(info);
-            displayInfo(info);
-            
-            
+            displayInfo(info);    
             
         } 
     };
@@ -64,7 +61,6 @@ function getHistory() {
 
     request.onreadystatechange = function() {
             if (request.readyState == 4 && request.status == 200) {
-            //alert("4.Responce has been sent and is ready to process");
             let hstr = JSON.parse(request.responseText);
             console.log(hstr);
             displayHistory(hstr);
@@ -135,7 +131,7 @@ function displayHistory(hstr) {
           str +=   '</ul></div>';
     
 
-    document.getElementById('info1').innerHTML = str;
+    document.getElementById('output').innerHTML = str;
 
     
     
@@ -176,34 +172,23 @@ function getLastFlight() {
 
     document.getElementById('output').innerHTML = str;
 
-    document.querySelector('#back').addEventListener('click', reload);
+    
 }
 
 function reload() {
     location.reload(true);
 }
+
 document.querySelector('#aboutCompany').addEventListener('click', e => {
   var menu = document.querySelector('#menu');
   if (menu.hasAttribute('open')) {
     menu.removeAttribute('open');
     
-    
   }
   else {
     menu.setAttribute('open', '');
     
       }
 })
-document.querySelector('#history').addEventListener('click', e => {
-  var menu = document.querySelector('#menu1');
-  if (menu.hasAttribute('open')) {
-    menu.removeAttribute('open');
-    
-    
-  }
-  else {
-    menu.setAttribute('open', '');
-    
-      }
-})
+
 
