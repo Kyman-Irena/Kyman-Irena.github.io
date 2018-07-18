@@ -112,9 +112,9 @@ function displayInOrder(flights) {
     output += '</tr>';
     for (let i=0; i<flights.length; i++) {
         output += '<tr>';
-        output += '<td><a href="#" data-number="' + i + '">'+flights[i].flight_number+'</a></td>';
-        output += '<td><a href="#" data-number="' + i + '">'+ flights[i].launch_year+'</a></td>';
-        output += '<td><a href="#" data-number="' + i + '">'+ flights[i].mission_name+'</a></td>';
+        output += '<td><a href="#" number="' + i + '">'+flights[i].flight_number+'</a></td>';
+        output += '<td><a href="#" number="' + i + '">'+ flights[i].launch_year+'</a></td>';
+        output += '<td><a href="#" number="' + i + '">'+ flights[i].mission_name+'</a></td>';
         output += '</tr>';
     }
     output += '</table>';
@@ -125,10 +125,24 @@ function displayInOrder(flights) {
 
 function displayHistory(hstr) {
     
+     let str = '<div id="background1"><ul>';
+    for (let i=0; i<hstr.length; i++) {
+        str += '<li class="info" id="bold"> ' +hstr[i].title + '</li>';
+        str += '<li class="info"> Event Date (UTC): ' +hstr[i].event_date_utc + '</li>';
+        str += '<li class="info"> Flight Number: ' +hstr[i].flight_number + '</li>';
+        str += '<li class="info"> Details: ' +hstr[i].details + '</li>';
+    }
+          str +=   '</ul></div>';
+    
+
+    document.getElementById('info1').innerHTML = str;
+
+    
+    
 }
 
 function getFlight() {
-    let i = event.target.getAttribute("data-number");
+    let i = event.target.getAttribute("number");
     localStorage.setItem("flight", JSON.stringify(flightObj[i]));
     console.log(flightObj[i].url);
     let str = '<div id="background">' +'<img src="'+flightObj[i].links.mission_patch_small+'" alt="picture of the flight">'+
@@ -137,13 +151,13 @@ function getFlight() {
         '<li class="info"> Launch Year: ' + flightObj[i].launch_year + '</li>' +
         '<li class = "info"> Launch Date(UTC): '+ flightObj[i].launch_date_utc + '</li>' +
         '<li class = "info"> Rocket Name: '+ flightObj[i].rocket.rocket_name + '</li>' +
+        '<li class = "info"> Telemetry: '+ '<a href="'+ flightObj[i].telemetry.flight_club +'">'+ flightObj[i].telemetry.flight_club +'</a></li>' +
         '<li class="info"> Details: ' + flightObj[i].details + '</li>'+
         '</div>';
 
 
     document.getElementById('output').innerHTML = str;
 
-    document.querySelector('#back').addEventListener('click', reload);
 }
 
 function getLastFlight() {
@@ -170,6 +184,18 @@ function reload() {
 }
 document.querySelector('#aboutCompany').addEventListener('click', e => {
   var menu = document.querySelector('#menu');
+  if (menu.hasAttribute('open')) {
+    menu.removeAttribute('open');
+    
+    
+  }
+  else {
+    menu.setAttribute('open', '');
+    
+      }
+})
+document.querySelector('#history').addEventListener('click', e => {
+  var menu = document.querySelector('#menu1');
   if (menu.hasAttribute('open')) {
     menu.removeAttribute('open');
     
